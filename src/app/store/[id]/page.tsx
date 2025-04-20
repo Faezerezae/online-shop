@@ -2,7 +2,7 @@ import React from 'react'
 
 interface IProductProps {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{}>;
+  searchParams: Promise<object>;
 }
 
 async function Products(props: IProductProps) {
