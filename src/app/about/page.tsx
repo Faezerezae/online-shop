@@ -2,26 +2,10 @@ import React from 'react'
 import Counter from './components/counter'
 import ServerComp from './components/serverComp'
 import axios from 'axios'
-
-export type Products = IGetProduct[]
-
-export interface IGetProduct {
-  id: number
-  title: string
-  price: number
-  description: string
-  category: string
-  image: string
-  rating: Rating
-}
-
-export interface Rating {
-  rate: number
-  count: number
-}
+import { IGetProduct } from '@/typescript/product';
 
 async function About() {
-  const { data } = await axios("https://fakestoreapiii.com/products");
+  const { data } = await axios("https://fakestoreapi.com/products");
   // console.log(data);
   return (
     <>
