@@ -17,6 +17,10 @@ function Navbar() {
       title: "About",
       link: "/about"
     },
+    {
+      title: "ContactUs",
+      link: "/contact-us"
+    },
 
   ]
 
