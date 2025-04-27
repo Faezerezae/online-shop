@@ -21,7 +21,7 @@ export interface Rating {
 }
 
 async function About() {
-  const { data } = await axios("https://fakestoreapi.com/products");
+  const { data } = await axios("https://fakestoreapiii.com/products");
   // console.log(data);
   return (
     <>
