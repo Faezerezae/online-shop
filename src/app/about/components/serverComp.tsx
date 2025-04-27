@@ -1,12 +1,14 @@
 //"این کامپوننت کلاینت کامپوننت هستش چون پدرش کلاینت کامپوننت هستش"
-import React, { useState } from 'react'
+// اگر در کامپوننت ابوت باشد دیگه سرور کامپوننت هستش و هوک ها را نمیپذیرد
+import React from 'react'
 
 function ServerComp() {
 
-const [ serverComp] = useState("");
+// const [ serverComp] = useState("");
     
   return (
-    <div>{serverComp}</div>
+    <div>ServerComp</div>
+    // <div>{serverComp}</div>
   )
 }
 
