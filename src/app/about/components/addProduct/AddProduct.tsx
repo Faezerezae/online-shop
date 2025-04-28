@@ -1,8 +1,11 @@
 "use client"
+import { AppContext } from '@/context/AppContext'
 import axios from 'axios'
-import React from 'react'
+import React, { useContext } from 'react'
 
 function AddProduct() {
+    const { data } = useContext(AppContext);
+    console.log(data)
     const handleAddProduct = () => {
         axios.post("http://localhost:8000/products", { id: Math.random(), title: "another title", views: 200 }
         )
