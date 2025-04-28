@@ -5,6 +5,7 @@ import ServerComp from './components/serverComp'
 import { IGetProduct } from '@/typescript/product';
 import AddProduct from './components/addProduct/AddProduct';
 import { sensitiveFun } from '@/utils/serverFunc';
+// import { clientFun } from '@/utils/clientFunc';
 
 async function About() {
   // const { data } = await axios("http://localhost:8000/products");
@@ -17,7 +18,9 @@ async function About() {
   });
   const data = await result.json();
   // console.log(data);
-  sensitiveFun()
+  sensitiveFun();
+  //چون فقط کلاینت انلی هستش به همین دلیل اگه باشه ارور در صفحه نمایش داده میشود
+  // clientFun();
   return (
     <>
       <div>About</div>
