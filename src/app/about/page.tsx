@@ -6,8 +6,8 @@ import { IGetProduct } from '@/typescript/product';
 
 async function About() {
   // const { data } = await axios("http://localhost:8000/products");
-  const result = await fetch("http://localhost:8000/products",{
-    cache:"no-cache"
+  const result = await fetch("http://localhost:8000/products", {
+    cache: "no-cache"
   });
   const data = await result.json();
   // console.log(data);
