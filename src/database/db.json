@@ -1,6 +1,24 @@
 {
-    "products": [
-      { "id": "1", "title": "a title", "views": 100 },
-      { "id": "2", "title": "another title", "views": 200 }
-    ]
-  }
+  "products": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": 0.6562510965498873,
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": 0.7394407390659361,
+      "title": "another title",
+      "views": 200
+    }
+  ]
+}
