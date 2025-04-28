@@ -7,7 +7,11 @@ import { IGetProduct } from '@/typescript/product';
 async function About() {
   // const { data } = await axios("http://localhost:8000/products");
   const result = await fetch("http://localhost:8000/products", {
-    cache: "no-cache"
+    // cache: "no-cache"
+    //درخواست بعدی بعد از 10 تانیه دیگه ارسال میشه
+    next:{
+      revalidate:10
+    }
   });
   const data = await result.json();
   // console.log(data);
