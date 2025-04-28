@@ -5,7 +5,7 @@ import axios from 'axios'
 import { IGetProduct } from '@/typescript/product';
 
 async function About() {
-  const { data } = await axios("https://fakestoreapi.com/products");
+  const { data } = await axios("http://localhost:8000/products");
   // console.log(data);
   return (
     <>
@@ -13,7 +13,6 @@ async function About() {
       {data.map((item: IGetProduct) => (
         <div className='bg-slate-600 mb-2' key={item.id}>
           <h5>{item.title}</h5>
-          <p>{item.description}</p>
         </div>
       ))}
       {/* ServerComp is server component as child */}
