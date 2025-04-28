@@ -4,6 +4,7 @@ import ServerComp from './components/serverComp'
 // import axios from 'axios'
 import { IGetProduct } from '@/typescript/product';
 import AddProduct from './components/addProduct/AddProduct';
+import { sensitiveFun } from '@/utils/serverFunc';
 
 async function About() {
   // const { data } = await axios("http://localhost:8000/products");
@@ -16,6 +17,7 @@ async function About() {
   });
   const data = await result.json();
   // console.log(data);
+  sensitiveFun()
   return (
     <>
       <div>About</div>

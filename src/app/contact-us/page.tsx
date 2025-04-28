@@ -1,5 +1,6 @@
 "use client"
 import { IGetProduct } from '@/typescript/product';
+// import { sensitiveFun } from '@/utils/serverFunc';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
@@ -8,8 +9,9 @@ function ContactUs() {
 
     useEffect(() => {
         axios("http://localhost:8000/products").then(result => { setProducts(result.data) });
+        //چون فقط سرور انلی هستش به همین دلیل اگه باشه ارور در صفحه نمایش داده میشود
+        // sensitiveFun()
     }, [])
-
     return (
         <>
             <div>Contact Us</div>
